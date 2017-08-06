@@ -66,4 +66,4 @@ fi
 
 echo "Starting dropboxd ($(cat /opt/dropbox/VERSION))..."
 umask 002
-exec su dropbox -s /bin/bash -c /opt/dropbox/dropboxd
+exec sudo -u dropbox /bin/bash -c /opt/dropbox/dropboxd
